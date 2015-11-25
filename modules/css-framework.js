@@ -28,8 +28,7 @@ define([
 ], function (require, module, $, _, angular) {
     'use strict';
 
-    var w20CSSFramework = angular.module('w20CSSFramework', ['ui.bootstrap', 'w20CoreEnv', 'w20CoreSecurity', 'w20CoreCulture']),
-        moduleConfig = module && module.config() || {};
+    var w20CSSFramework = angular.module('w20CSSFramework', ['ui.bootstrap', 'w20CoreEnv', 'w20CoreSecurity', 'w20CoreCulture']);
 
     w20CSSFramework.run(['EventService', 'CultureService', 'datepickerConfig', 'datepickerPopupConfig',
         function (eventService, cultureService, datepickerConfig, datepickerPopupConfig) {
@@ -43,9 +42,9 @@ define([
 
             function updateDatePicker(culture) {
                 datepickerPopupConfig.datepickerPopup = culture.calendars.standard.patterns.d;
-                datepickerPopupConfig.currentText = cultureService.localize('w20.ui.datepicker.today');
-                datepickerPopupConfig.clearText = cultureService.localize('w20.ui.datepicker.clear');
-                datepickerPopupConfig.closeText = cultureService.localize('w20.ui.datepicker.close');
+                datepickerPopupConfig.currentText = cultureService.localize('w20.bs3.datepicker.today');
+                datepickerPopupConfig.clearText = cultureService.localize('w20.bs3.datepicker.clear');
+                datepickerPopupConfig.closeText = cultureService.localize('w20.bs3.datepicker.close');
             }
 
             eventService.on('w20.culture.culture-changed', function (culture) {
@@ -57,7 +56,7 @@ define([
 
     return {
         angularModules: ['w20CSSFramework'],
-        get name () {
+        get name() {
             return 'bootstrap-3';
         }
     };
