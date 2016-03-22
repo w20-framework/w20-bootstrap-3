@@ -16,9 +16,9 @@
     "test-main.js"
   ],
   "dependencies": {
-    "angular-bootstrap": "^1.2.4",
-    "bootstrap": "^3.3.6",
-    "font-awesome": "^4.5.0",
+    "angular-bootstrap": "~1.2.5",
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.5.0",
     "w20": "#master"
   }
 }
