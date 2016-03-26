@@ -28,7 +28,7 @@ define([
 
     var w20CSSFramework = angular.module('w20CSSFramework', ['ui.bootstrap', 'w20CoreEnv', 'w20CoreSecurity', 'w20CoreCulture']);
 
-    w20CSSFramework.run(['EventService', 'CultureService', 'datepickerConfig', 'datepickerPopupConfig',
+    w20CSSFramework.run(['EventService', 'CultureService', 'uibDatepickerConfig', 'uibDatepickerPopupConfig',
         function (eventService, cultureService, datepickerConfig, datepickerPopupConfig) {
 
             datepickerConfig.formatDay = 'dd';
