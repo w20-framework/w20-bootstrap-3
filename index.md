@@ -2,9 +2,9 @@
 title: "Basics"
 name: "W20 Bootstrap 3"
 repo: "https://github.com/seedstack/w20-bootstrap-3"
-author: "SeedStack"
-description: "Provides Twitter Bootstrap v3.0 support"
-min-version: "15.11+"
+date: 2016-01-20
+author: Kavi RAMYEAD
+description: "Provides Twitter Bootstrap 3 support."
 frontend: "responsive"
 weight: -1
 tags:
