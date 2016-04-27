@@ -19,6 +19,6 @@
     "angular-bootstrap": "~1.2.5",
     "bootstrap": "~3.3.6",
     "font-awesome": "~4.5.0",
-    "w20": "#master"
+    "w20": "~2.3.0"
   }
 }
