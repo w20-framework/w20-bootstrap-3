@@ -1,4 +1,4 @@
-# Version 2.2.0 (?)
+# Version 2.2.0 (2016-04-27)
 
 * [brk] Update UI-Bootstrap to 1.2.4 which has breaking changes (https://github.com/angular-ui/bootstrap/blob/master/CHANGELOG.md)
 
