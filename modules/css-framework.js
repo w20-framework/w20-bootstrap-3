@@ -37,7 +37,8 @@ define([
             datepickerConfig.formatDayHeader = 'ddd';
             datepickerConfig.formatDayTitle = 'MMMM yyyy';
             datepickerConfig.formatMonthTitle = 'yyyy';
-
+            // issue with angular-ui-bootstrap-datepicker
+            $locale.DATETIME_FORMATS.STANDALONEMONTH = angular.copy($locale.DATETIME_FORMATS.MONTH);
             function updateDatePicker(culture) {
                 datepickerPopupConfig.datepickerPopup = culture.calendars.standard.patterns.d;
                 datepickerPopupConfig.currentText = cultureService.localize('w20.bs3.datepicker.today');
