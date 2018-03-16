@@ -28,8 +28,8 @@ define([
 
     var w20CSSFramework = angular.module('w20CSSFramework', ['ui.bootstrap', 'w20CoreEnv', 'w20CoreSecurity', 'w20CoreCulture']);
 
-    w20CSSFramework.run(['EventService', 'CultureService', 'uibDatepickerConfig', 'uibDatepickerPopupConfig',
-        function (eventService, cultureService, datepickerConfig, datepickerPopupConfig) {
+    w20CSSFramework.run(['EventService', '$locale', 'CultureService', 'uibDatepickerConfig', 'uibDatepickerPopupConfig',
+        function (eventService, $locale, cultureService, datepickerConfig, datepickerPopupConfig) {
 
             datepickerConfig.formatDay = 'dd';
             datepickerConfig.formatMonth = 'MMMM';
