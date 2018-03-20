@@ -22,9 +22,10 @@
     "requirejs": "~2.1"
   },
   "dependencies": {
+    "angular-animate": "^1.6.9",
     "angular-ui-bootstrap": "^2.5.0",
     "bootstrap": "~3.3.7",
     "font-awesome": "^4.7.0",
-    "w20": "~2.4.0-rc"
+    "w20": "git+https://github.com/jmmartinez84/w20.git"
   }
 }

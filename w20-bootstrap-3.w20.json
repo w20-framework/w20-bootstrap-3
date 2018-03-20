@@ -21,6 +21,7 @@
     },
     "paths": {
       "{bootstrap}": "${components-path:node_modules}/bootstrap/dist",
+      "{angular-animate}": "${components-path:node_modules}/angular-animate",
       "{angular-bootstrap}": "${components-path:node_modules}/angular-ui-bootstrap/dist",
       "{font-awesome}": "${components-path:node_modules}/font-awesome"
     },
@@ -28,8 +29,12 @@
       "{bootstrap}/js/bootstrap": [
         "jquery"
       ],
-      "{angular-bootstrap}/ui-bootstrap-tpls": [
+      "{angular-animate}/angular-animate":[
         "{angular}/angular"
+      ],
+      "{angular-bootstrap}/ui-bootstrap-tpls": [
+        "{angular}/angular",
+        "{angular-animate}/angular-animate"
       ]
     }
   },
